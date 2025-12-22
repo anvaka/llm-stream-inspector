@@ -9,6 +9,7 @@ lib-cov
 
 .tap
 
+dist
 pids
 logs
 results
