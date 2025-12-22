@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSE Stream Inspector</title>
+  <script type="module" crossorigin src="./assets/index-Cz5a4ert.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BCBnrQXX.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SSE Stream Inspector</h1>
+      <p class="subtitle">Paste raw SSE stream data to reconstruct the message</p>
+    </header>
+
+    <main>
+      <section class="input-section">
+        <div class="section-header">
+          <label for="sse-input">Raw SSE Stream</label>
+          <button id="clear-btn" type="button">Clear</button>
+        </div>
+        <div class="editor-container">
+          <div id="line-numbers" class="line-numbers" aria-hidden="true"></div>
+          <textarea 
+            id="sse-input" 
+            placeholder="Paste your SSE stream here (data: {...} lines)"
+            spellcheck="false"
+          ></textarea>
+        </div>
+      </section>
+
+      <section class="output-section">
+        <div class="section-header">
+          <label>Reconstructed Output</label>
+          <button id="copy-btn" type="button">Copy</button>
+        </div>
+        
+        <div id="metadata" class="metadata hidden"></div>
+        
+        <div id="errors" class="errors hidden"></div>
+        
+        <div id="output" class="output-content">
+          <span class="placeholder">Output will appear here</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Supports OpenAI, Anthropic Claude, and compatible formats</p>
+    </footer>
+  </div>
+
+</body>
+</html>
