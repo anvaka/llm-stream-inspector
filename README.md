@@ -4,6 +4,8 @@ Parse and reconstruct Server-Sent Events (SSE) streams from LLM providers.
 
 https://anvaka.github.io/llm-stream-inspector/
 
+![demo](demo.png)
+
 ## What?
 
 When you work with LLM APIs (OpenAI, Claude, etc.) in streaming mode, they send data as 
