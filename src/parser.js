@@ -96,6 +96,7 @@ function extractGenericContent(data) {
   const paths = [
     ['content'],
     ['text'],
+    ['chunk'],
     ['delta', 'content'],
     ['delta', 'text'],
     ['message', 'content'],
